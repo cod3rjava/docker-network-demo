@@ -12,7 +12,7 @@ function App() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await axios.post('http://backend:5000/api/users', form);
+    await axios.post('http://localhost:5000/api/users', form);
     setForm({ name: '', email: '' });
     fetchUsers();
   };
